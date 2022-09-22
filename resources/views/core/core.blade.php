@@ -15,18 +15,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="{{ asset('js/Ajax.js') }}"></script>
+    <link href="{{ asset('css/DataTable_Bootstrap.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/DataTable_Jquery.js') }}"></script>
+    <script src="{{ asset('js/DataTable_Bootstrap.js') }}"></script>
 
     <!-- AdminLTE App -->
-    <script src="js/adminlte.min.js"></script>
+    <script src="{{ asset('js/adminlte.min.js') }}"></script>
 
 
-    <link rel="stylesheet" href="css/adminlte.min.css">
+    <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
     <link rel="icon" href="{{ url('gif.gif') }}">
 
     <style>

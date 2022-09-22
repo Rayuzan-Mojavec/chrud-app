@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 
 <head>
@@ -19,18 +15,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="<?php echo e(asset('js/Ajax.js')); ?>"></script>
+    <link href="<?php echo e(asset('css/DataTable_Bootstrap.css')); ?>" rel="stylesheet">
+    <script src="<?php echo e(asset('js/DataTable_Jquery.js')); ?>"></script>
+    <script src="<?php echo e(asset('js/DataTable_Bootstrap.js')); ?>"></script>
 
     <!-- AdminLTE App -->
-    <script src="js/adminlte.min.js"></script>
+    <script src="<?php echo e(asset('js/adminlte.min.js')); ?>"></script>
 
 
-    <link rel="stylesheet" href="css/adminlte.min.css">
+    <link rel="stylesheet" href="<?php echo e(asset('css/adminlte.min.css')); ?>">
     <link rel="icon" href="<?php echo e(url('gif.gif')); ?>">
 
     <style>
@@ -39,51 +33,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
             src: url("/font/GoogleSans-Regular.ttf");
         }
 
-        @font-face {
-            font-family: "price";
-            src: url("/font/pricedow.ttf");
-        }
 
-        @font-face {
-            font-family: "japan";
-            src: url("/font/meiryo.ttc");
-        }
-
-        @font-face {
-            font-family: "japan-bold";
-            src: url("/font/meiryob.ttc");
-        }
-
-        @font-face {
-            font-family: "korea";
-            src: url("/font/gulim.ttc");
-        }
-
-        @font-face {
-            font-family: "sunda";
-            src: url("/font/Sunda.ttf");
-        }
-
-
-        body:not(.tubuh-permasehian):not(.ningenisasi):not(.sunda):not(.plastikk) {
+        body {
             font-family: "MyWebFont";
         }
 
-        .plastikk {
-            font-family: "korea";
-        }
-
-        .tubuh-permasehian {
-            font-family: "price";
-        }
-
-        .ningenisasi {
-            font-family: "japan", "japan-bold";
-        }
-
-        .sunda {
-            font-family: "sunda";
-        }
     </style>
 
 </head>
@@ -98,9 +52,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item d-none d-sm-inline-block ps-2">
                     <a class="nav-link bg-primary rounded" data-widget="pushmenu" href="#" role="button">ዘ
                         </a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block  ps-2">
-                    <?php echo $__env->yieldContent('refresh-button'); ?>
                 </li>
             </ul>
 
